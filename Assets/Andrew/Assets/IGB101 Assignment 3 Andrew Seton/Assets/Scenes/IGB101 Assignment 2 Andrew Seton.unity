@@ -596,7 +596,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faabf19bf54754740af85fef5d68e29e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: IGB101 Assignment 2 Andrew Seton
 --- !u!65 &138567167
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8029,7 +8028,7 @@ GameObject:
   - component: {fileID: 606952662}
   - component: {fileID: 606952661}
   - component: {fileID: 606952660}
-  - component: {fileID: 606952659}
+  - component: {fileID: 606952663}
   m_Layer: 0
   m_Name: Player Camera
   m_TagString: Untagged
@@ -8037,27 +8036,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &606952659
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 606952658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfa4549088b34fe418be033964e89093, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CameraTarget: {fileID: 1154977463}
-  cameraSpeed: 5
-  invert: 0
-  upAngleView: 10
-  downAngleView: 50
-  MaxViewDistance: 20
-  MinViewDistance: 1
-  ZoomRate: 32
-  cameraTargetHeight: 0
 --- !u!81 &606952660
 AudioListener:
   m_ObjectHideFlags: 0
@@ -8132,6 +8110,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &606952663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606952658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c23a4abcc71c843b7d77a4195ada30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CameraTarget: {fileID: 1154977463}
+  cameraSpeed: 5
+  invert: 0
+  upAngleView: 45
+  downAngleView: 65
+  MaxViewDistance: 15
+  MinViewDistance: 1
+  ZoomRate: 20
+  cameraTargetHeight: 1
 --- !u!1 &612653290
 GameObject:
   m_ObjectHideFlags: 0
@@ -43277,20 +43276,10 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 840912223}
   m_Mesh: {fileID: 4300000, guid: 2902b228b51682e49b120efe22113a45, type: 3}
---- !u!1 &857050113 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3933720169505491195, guid: b7bc5c5f443fced4ba5406778ebd7798, type: 3}
-  m_PrefabInstance: {fileID: 984972917}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &907656643 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2589094340834419255, guid: 312952579f7c89a48bd77647ff84c35e, type: 3}
   m_PrefabInstance: {fileID: 8049047042905249544}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &921899438 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1976589337328588294, guid: fb1bc7b64a8752d48a769b0a5942f892, type: 3}
-  m_PrefabInstance: {fileID: 6251494351140707774}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &921899441 stripped
 Transform:
@@ -43509,26 +43498,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81e3c57e5fdbfa34493f21976ccaf579, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraNodes:
-  - {fileID: 1143199729}
-  - {fileID: 2010515361}
-  - {fileID: 1797015622}
-  - {fileID: 1711082093}
-  - {fileID: 740557334}
-  - {fileID: 1528596266}
-  - {fileID: 825278670}
-  - {fileID: 431260508}
-  objects:
-  - {fileID: 195759399}
-  - {fileID: 1523678580}
-  - {fileID: 1255736606}
-  - {fileID: 1298591763}
-  - {fileID: 481072495}
-  - {fileID: 921899438}
-  - {fileID: 857050113}
-  - {fileID: 347524736}
-  moveSpeed: 1
-  rotSpeed: 4
 --- !u!1001 &984972917
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45163,7 +45132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1147858892}
-  botSpeed: 10
+  rotSpeed: 10
 --- !u!143 &1147858891
 CharacterController:
   m_ObjectHideFlags: 0
@@ -53652,11 +53621,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e491777fcc5ea354eaba78b3d5e5ffa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1147858888}
-  currentPickup: 0
-  maxPickups: 4
-  levelComplete: 0
-  pickupText: {fileID: 1385051674}
 --- !u!4 &1839190131
 Transform:
   m_ObjectHideFlags: 0
