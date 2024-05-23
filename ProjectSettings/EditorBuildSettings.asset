@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Panda/Scenes/PandaScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Ngyoom/Scenes/Ngyoom Scene.unity
+    guid: 0855d3c4035129749bd89545f1e46cb5
+  - enabled: 1
+    path: Assets/Mav/Scenes/MavScene.unity
+    guid: bd72b0d65573b068f95797a654c5daaf
   m_configObjects: {}
