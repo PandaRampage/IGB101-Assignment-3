@@ -9,6 +9,9 @@ public class Float_Script : MonoBehaviour
     public float z;
     public float y;
     public float amp;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
