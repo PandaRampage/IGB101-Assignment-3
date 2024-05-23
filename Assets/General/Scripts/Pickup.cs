@@ -5,11 +5,11 @@ using UnityEngine;
 public class Pickup : MonoBehaviour
 {
 
-    GameManager gameManager;
+    public GameManager gameManager;
 
     private void OnTriggerEnter(Collider otherObject)
     {
-        if(otherObject.transform.tag == "Player")
+        if(otherObject.GetComponent<PlayerMovement>())
         {
             gameManager.currentPickups += 1;
             Destroy(this.gameObject);
