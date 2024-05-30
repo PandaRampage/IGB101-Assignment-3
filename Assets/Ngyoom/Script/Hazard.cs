@@ -11,7 +11,7 @@ public class Hazard : MonoBehaviour
     private void OnTriggerEnter(Collider otherObject)
     {
         if(otherObject.transform.tag == "Player")
-        SceneManager.LoadScene("Ngyoom Scene");
+        SceneManager.LoadScene(currentLevel);
     }
     // Start is called before the first frame update
     void Start()
