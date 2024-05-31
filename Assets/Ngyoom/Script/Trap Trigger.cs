@@ -11,7 +11,6 @@ public class TrapTrigger : MonoBehaviour
             if(otherObject.GetComponent<PlayerMovement>())
             {
                 animation.SetBool("Rising Spikes", true);
-                Destroy(this.gameObject);
             }
         }
     // Start is called before the first frame update
