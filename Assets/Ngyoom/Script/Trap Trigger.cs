@@ -10,7 +10,7 @@ public class TrapTrigger : MonoBehaviour
         {
             if(otherObject.GetComponent<PlayerMovement>())
             {
-                animation.SetBool("Rising Spike", true);
+                animation.SetBool("Rising Spikes", true);
                 Destroy(this.gameObject);
             }
         }
